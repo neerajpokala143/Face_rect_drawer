@@ -17,22 +17,10 @@ from azure.cognitiveservices.vision.face.models import TrainingStatusType, Perso
 import matplotlib.pyplot as plt
 import streamlit as st
 
-import cv2
-
 st.set_page_config(layout="wide")
 
-#st.title("hello")
-#
-#st.image(os.path.join('./','bharath.jpg'), use_column_width  = True)
 
 st.markdown("<h1 style='text-align: center; color: red; '>Face detecter </h1>", unsafe_allow_html=True)
-
-
-#st.markdown('Streamlit is **_really_ cool**.')
-
-#Image = st.file_uploader('Upload your portrait here',type=['jpg','jpeg','png'])
-
-##st.write(Image)
 
 
 
@@ -87,10 +75,6 @@ if Bharath:
         draw = ImageDraw.Draw(img)
         for face in detected_faces:
             draw.rectangle(getRectangle(face), outline='blue')
-
-            #cv2.imwrite('images.jpg',img)
-
-
 
             
             
